@@ -1,0 +1,211 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #004B87; /* Bleu principal Moov */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Carte */
+.cadre {
+  background: #fff;
+  border: 2px solid #FF7900; /* Orange accent */
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.logo img {
+  width: 49px;
+  height: auto;
+}
+
+/* Entête */
+.titre {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #004B87;
+  margin-bottom: 25px;
+}
+
+/* Formulaire */
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-groupe {
+  position: relative;
+}
+
+/* input & select même style */
+.input-groupe input,
+.input-groupe select {
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0, 75, 135, 0.4); /* bleu clair */
+  color: #004B87;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+
+/* Label flottant */
+.input-groupe label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: rgba(0, 75, 135, 0.7);
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.input-groupe input:focus ~ label,
+.input-groupe input:valid ~ label,
+.input-groupe select:focus ~ label,
+.input-groupe select:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #FF7900; /* orange accent */
+}
+
+/* Barre animée */
+.input-barre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FF7900; /* orange */
+  transition: width 0.3s;
+  box-shadow: 0 0 5px #FF7900;
+}
+
+.input-groupe input:focus ~ .input-barre {
+  width: 100%;
+}
+/* Flèche personnalisée du select */
+.input-groupe.select::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 12px;
+  color: #004B87;
+  pointer-events: none;
+}
+
+/* Bouton */
+.button {
+  position: relative;
+  background: transparent;
+  color: #004B87;
+  border: 2px solid #FF7900;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: rgba(255, 121, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 121, 0, 0.5);
+}
+
+/* Lien */
+.lien {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #004B87;
+  text-decoration: none;
+}
+
+.lien:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .cadre {
+    padding: 20px;
+    max-width: 90%;
+  }
+  
+/* Formulaire compact */
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* réduit l’espace entre champs */
+}
+
+.input-groupe input,
+.input-groupe select {
+  padding: 8px 0; /* moins haut */
+  font-size: 14px; /* texte plus petit */
+}
+
+.input-groupe label {
+  top: 8px; /* ajuste la position du label */
+  font-size: 14px;
+}
+
+.input-groupe input:focus ~ label,
+.input-groupe input:valid ~ label,
+.input-groupe select:focus ~ label,
+.input-groupe select:valid ~ label {
+  top: -12px; /* label remonte mais moins haut */
+  font-size: 11px;
+}
+
+.titre {
+  font-size: 20px; /* titre plus petit */
+  margin-bottom: 15px;
+}
+
+.button {
+  padding: 8px;
+  font-size: 13px;
+}
+
+.lien {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Carte plus compacte */
+.cadre {
+  padding: 20px;
+  max-width: 340px;
+}
+}

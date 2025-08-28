@@ -1,0 +1,393 @@
+:root {
+  /* Couleurs opérateurs */
+  --mtn-jaune: #ffd100;
+  --mtn-noir: #000000;
+  --orange-orange: #ff7900;
+  --orange-noir: #1d1d1b;
+  --moov-bleu: #0047ab;
+  --moov-orange: #ff6600;
+
+  /* Couleurs générales */
+  --blanc: #ffffff;
+  --gris: #f5f5f5;
+  --ombre: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--gris);
+  color: var(--orange-noir);
+}
+
+/* ===== STRUCTURE ===== */
+.conteneur-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.entete {
+  background: var(--blanc);
+  box-shadow: var(--ombre);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.barre-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.marque {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--moov-bleu);
+  gap: 0.5rem;
+}
+
+.menu-nav {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.element-nav a {
+  text-decoration: none;
+  color: var(--mtn-noir);
+  font-weight: 500;
+}
+
+.element-nav.actif a,
+.element-nav a:hover {
+  color: var(--orange-orange);
+}
+
+/* ===== HERO ===== */
+.section-hero {
+  background: linear-gradient(135deg, var(--mtn-jaune), var(--orange-orange), var(--moov-bleu));
+  color: var(--blanc);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.actions-hero {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ===== BOUTONS ===== */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primaire {
+  background: var(--blanc);
+  color: var(--moov-bleu);
+}
+
+.btn-primaire:hover {
+  background: var(--gris);
+}
+
+.btn-secondaire {
+  border: 2px solid var(--blanc);
+  color: var(--blanc);
+}
+
+.btn-secondaire:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ===== IDENTIFICATION ===== */
+.section-identification {
+  background: var(--blanc);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: var(--ombre);
+  text-align: center;
+}
+
+.boite-saisie {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.boite-saisie input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.resultat {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+:root {
+  /* Couleurs opérateurs */
+  --mtn-jaune: #ffd100;
+  --mtn-noir: #000000;
+  --orange-orange: #ff7900;
+  --orange-noir: #1d1d1b;
+  --moov-bleu: #0047ab;
+  --moov-orange: #ff6600;
+
+  /* Couleurs générales */
+  --blanc: #ffffff;
+  --gris: #f5f5f5;
+  --ombre: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--gris);
+  color: var(--orange-noir);
+}
+
+/* ===== STRUCTURE ===== */
+.conteneur-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.entete {
+  background: var(--blanc);
+  box-shadow: var(--ombre);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.barre-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.marque {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--moov-bleu);
+  gap: 0.5rem;
+}
+
+.menu-nav {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.element-nav a {
+  text-decoration: none;
+  color: var(--mtn-noir);
+  font-weight: 500;
+}
+
+.element-nav.actif a,
+.element-nav a:hover {
+  color: var(--orange-orange);
+}
+
+/* ===== HERO ===== */
+.section-hero {
+  background: linear-gradient(135deg, var(--mtn-jaune), var(--orange-orange), var(--moov-bleu));
+  color: var(--blanc);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.actions-hero {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ===== BOUTONS ===== */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primaire {
+  background: var(--blanc);
+  color: var(--moov-bleu);
+}
+
+.btn-primaire:hover {
+  background: var(--gris);
+}
+
+.btn-secondaire {
+  border: 2px solid var(--blanc);
+  color: var(--blanc);
+}
+
+.btn-secondaire:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ===== IDENTIFICATION ===== */
+.section-identification {
+  background: var(--blanc);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: var(--ombre);
+  text-align: center;
+}
+
+.boite-saisie {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.boite-saisie input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.resultat {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ===== PIED ===== */
+.pied {
+  background: var(--orange-noir);
+  color: var(--blanc);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+/* ===== SECTION OPÉRATEURS ===== */
+.section-operateurs {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.section-operateurs h2 {
+    color: var(--orange-noir);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.grille-operateurs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.carte-operateur {
+    background: var(--blanc);
+    border-radius: 10px;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--couleur-texte);
+    box-shadow: var(--ombre);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid var(--couleur-principale);
+}
+
+.carte-operateur:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.icone-operateur {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.carte-operateur h3 {
+    margin-bottom: 0.5rem;
+    color: var(--orange-noir);
+}
+
+.carte-operateur p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.badge-operateur {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* ===== PIED ===== */
+.pied {
+  background: var(--orange-noir);
+  color: var(--blanc);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+

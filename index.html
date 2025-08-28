@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identification Numéros | Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="conteneur-app">
+        <!-- ENTÊTE -->
+        <header class="entete">
+            <nav class="barre-nav">
+                <div class="marque">
+                    <i class="fas fa-sim-card"></i>
+                    <span>NuméroID</span>
+                </div>
+                <ul class="menu-nav">
+                    <li class="element-nav actif"><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li class="element-nav"><a href="ajouter.php"><i class="fas fa-plus-circle"></i> Ajouter</a></li>
+                    <li class="element-nav"><a href="#"><i class="fas fa-database"></i> Base</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SECTION HERO -->
+        <main class="principal">
+            <section class="section-hero">
+                <div class="contenu-hero">
+                    <h1>Identifiez vos numéros téléphoniques facilement</h1>
+                    <p>Sélectionnez un opérateur pour vérifier un numéro par CNI ou par téléphone.</p>
+                </div>
+            </section>
+
+            <!-- SECTION OPÉRATEURS -->
+            <section class="section-operateurs">
+                <h2><i class="fas fa-mobile-alt"></i> Choisissez un opérateur</h2>
+                <div class="grille-operateurs">
+                    <!-- Carte MTN -->
+                    <a href="mtn.html" class="carte-operateur" style="--couleur-principale: #ffcb05; --couleur-texte: #000000;">
+                        <div class="icone-operateur">
+                            <img src="images/mtn.png" alt="MTN CI" style="width: 40px;">
+                        </div>
+                        <h3>MTN Côte d'Ivoire</h3>
+                        <p>Vérification par Numéro CNI ou Téléphone</p>
+                        <div class="badge-operateur" style="background: #ffcb05; color: #000;">MTN</div>
+                    </a>
+
+                    <!-- Carte Orange -->
+                    <a href="orange.html" class="carte-operateur" style="--couleur-principale: #ff7900; --couleur-texte: #ffffff;">
+                        <div class="icone-operateur">
+                            <img src="images/orange.png" alt="MTN CI" style="width: 40px;">
+                        </div>
+                        <h3>Orange CI</h3>
+                        <p>Vérification par Numéro CNI ou Téléphone</p>
+                        <div class="badge-operateur" style="background: #ff7900; color: #fff;">Orange</div>
+                    </a>
+
+                    <!-- Carte Moov -->
+                    <a href="moov.html" class="carte-operateur" style="--couleur-principale: #0047ab; --couleur-texte: #ffffff;">
+                        <div class="icone-operateur">
+                            <img src="images/moov.png" alt="MTN CI" style="width: 40px;">
+                        </div>
+                        <h3>Moov Africa</h3>
+                        <p>Vérification par Numéro CNI ou Téléphone</p>
+                        <div class="badge-operateur" style="background: #0047ab; color: #fff;">Moov</div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- PIED DE PAGE -->
+        <footer class="pied">
+            <div class="contenu-pied">
+                <div class="marque-pied">
+                    <i class="fas fa-sim-card"></i>
+                    <span>NuméroID</span>
+                </div>
+                <p>&copy; 2025 NuméroID...</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

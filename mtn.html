@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTN CI - Vérification</title>
+  <link href="css/mtn.css" rel="stylesheet">
+</head>
+<body>
+  <div class="cadre">
+    <!-- Logo MTN -->
+    <div class="logo">
+      <img src="images/mtn.png" alt="MTN.Ci">
+    </div>
+
+    <h1 class="titre">MTN CI</h1>
+
+    <form method="Post" action="requete/listeMtn.php" class="formulaire">
+      <div class="input-groupe select">
+        <select name="ref">
+          <option value="1">Numéro CNI</option>
+          <option value="2">Numéro de téléphone</option>
+        </select>
+        <label for="ncni">Recherche par</label>
+        <div class="input-barre"></div>
+      </div>
+
+      <div class="input-groupe">
+        <input type="text" name="donnee" required>
+        <label for="ntel">Saisi</label>
+        <div class="input-barre"></div>
+      </div>
+
+      <button type="submit" name="verifier" class="button">Vérification</button>
+
+      <a href="#" class="lien">Besoin d’aide ? Contactez le service client</a>
+    </form>
+  </div>
+</body>
+</html>
